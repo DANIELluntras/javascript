@@ -18,3 +18,4 @@ movements.forEach(function(mov, i, arr) {
         console.log(` movament ${i + 1}: you withdrew  ${Math.abs(mov)}`);
     }
 });
+
