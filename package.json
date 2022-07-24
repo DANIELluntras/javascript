@@ -1,0 +1,21 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "This project was carried out side by side with Professor JONAS SCHMEDTMANN",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node open-FirstNodejs -Server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DANIELluntras/javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DANIELluntras/javascript/issues"
+  },
+  "homepage": "https://github.com/DANIELluntras/javascript#readme"
+}
