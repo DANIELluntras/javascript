@@ -5,7 +5,7 @@
   "main": "javascript.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node open-FirstNodejs -Server"
+    "start": "nodemon open-FirstNodejs -Server"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/DANIELluntras/javascript/issues"
   },
-  "homepage": "https://github.com/DANIELluntras/javascript#readme"
+  "homepage": "https://github.com/DANIELluntras/javascript#readme",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
