@@ -20,5 +20,8 @@
   "homepage": "https://github.com/DANIELluntras/javascript#readme",
   "dependencies": {
     "nodemon": "^2.0.19"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   }
 }
