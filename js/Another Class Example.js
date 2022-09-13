@@ -1,12 +1,12 @@
 class Account {
     local = navigator.language;
 
-    _movements = [];
 
 
 
 
-
+    // 02 Privat fields
+    #movements = [];
 
     constructor(owner, moneda, pin) {
         this.owner = owner;
@@ -23,15 +23,17 @@ class Account {
 
       //public interface
     getMovements() {
-        return this._movements;
+        return this.#movements;
     }
 
     deposit(val) {
-          this._movements.push(val);
+          this.#movements.push(val);
+          return this;
       }
 
     withdraw(val) {
         this.deposit(-val);
+          return this;
     }
 
     _approveLoad(val) {
@@ -39,20 +41,56 @@ class Account {
     }
 
     requestLoad(val) {
-          if (this._approveLoad(val)) {
-              this.deposit(val);
-              console.log(`load approved`);
+        if (this._approveLoad(val)) {
+            this.deposit(val);
+            console.log(`load approved`);
+            return this;
         }
+      }
+
+    static helper() {
+        console.log('helper')
     }
+
+
+
+
+    //4) private methods 
+    _approveLoad(val) {
+        return true;
+    }
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
     // contruim noi persoane
 const acc1 = new Account('Daniel', 'lei', 1111);
 console.log(acc1);
-acc1._movements.push(250);
-acc1._movements.push(-140);
+// acc1.#movements.push(250);
+// acc1.#movements.push(-140);
 console.log(acc1.getMovements());
 acc1.deposit(350);
 acc1.withdraw(134);
 acc1.requestLoad(1);
 
 console.log(acc1);
+console.log(acc1._approveLoad(100));
+
+Account.helper()
+
+// —225 - change method
+acc1.deposit(300).deposit(500).withdraw(35).
+    requestLoad(25000).withdraw(4000);
+
+console.log(acc1.getMovements())
