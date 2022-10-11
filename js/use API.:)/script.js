@@ -14,7 +14,7 @@ const renderCountry = function (data, className = '') {
             +data.population / 1000000
         ).toFixed(1)} people</p>
           <p class="country__row"><span>🗣️</span>${data.languages.por}</p>
-          <p class="country__row"><span>💰</span>${data.currencies.EUR.name}</p>
+          <p class="country__row"><span>💰</span>${data.currencies.EUR}</p>
         </div>
       </article>`;
     countriesContainer.insertAdjacentHTML('beforeend', html);
@@ -26,6 +26,8 @@ const getCountryData = function (country) {
         .then((response) => response.json())
         .then((data) => renderCountry(data[0]))
 };
-getCountryData('portugal')
-getCountryData('usa')
+getCountryData('portugal');
+getCountryData('usa');
+getCountryData('romania');
+getCountryData('australia');
 
