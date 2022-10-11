@@ -62,20 +62,3 @@ const getCountryAndNeighbour = function (country) {
 //si vecini , tank super fain
 // getCountryAndNeighbour('portugal');
 getCountryAndNeighbour('usa');
-
-setTimeout(() => {
-    console.log('1 second')
-    setTimeout(() => {
-        console.log('2 second')
-        setTimeout(() => {
-            console.log('3 second')
-            setTimeout(() => {
-                console.log('4 second')
-                setTimeout(() => {
-                    console.log('5 second')
-                }, 1000)
-            }, 1000)
-        }, 1000)
-    }, 1000)
-}, 1000)
-
