@@ -63,6 +63,11 @@ btn.addEventListener('click', function () {
 })
 
 getCountryData('portugal');
+console.log(portugal)
+
+
+
+
 
 
 
