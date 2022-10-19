@@ -28,5 +28,5 @@ const whereAmi = function (lat, lng) {
         .catch(err => console.error(`${err.message} 😡`))
 }
 whereAmi(52.508, 13.381)
-whereAmi(19.037, 72.873)
-whereAmi(- 33.933, 18.474)
+// whereAmi(19.037, 72.873)
+// whereAmi(- 33.933, 18.474)
