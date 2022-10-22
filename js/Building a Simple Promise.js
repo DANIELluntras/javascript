@@ -31,6 +31,7 @@ wait(2)
         console.log('i wait for  1 seconds')
         return wait(1)
     })
+
     .then(() => {
         console.log('i wait for  2 seconds')
         return wait(1)
