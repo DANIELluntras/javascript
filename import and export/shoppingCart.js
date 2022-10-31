@@ -15,13 +15,3 @@ export default function (product, quantity) {
     cart.push({ product, quantity });
     console.log(`${quantity} ${product} added to cart`);
 }
-//export
-// export.addtocart = function (product, quantity) {
-//     cart.push({ product, quantity });
-//     console.log(`${quantity} ${product} order from Supplimer (shipping cost is ${shoppingCart}`);
-
-// };
-
-//import
-const { addtocart } = require('./shoppingCart.js');
-
