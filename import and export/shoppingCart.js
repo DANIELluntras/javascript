@@ -1,5 +1,6 @@
 console.log('Import modal')
-
+//blocking code 
+console.log('start')
 const shoppingCart = 20;
 export const cart = [];
 export const addtocart = function (product, quantity) {
