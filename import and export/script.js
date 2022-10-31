@@ -5,7 +5,7 @@
 // // console.log('Export module');
 // // import * as ShoppingCart from'./shoppingCart.js';
 
-import shoppingCart from "./shoppingCart";
+// import shoppingCart from "./shoppingCart";
 
 // // ShoppingCart.addtocart('bread',5 );
 
