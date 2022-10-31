@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/DANIELluntras/javascript#readme",
   "dependencies": {
+    "leaflet": "^1.9.2",
+    "lodash": "^4.17.21",
     "nodemon": "^2.0.19"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   }
 }
