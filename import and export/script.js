@@ -74,7 +74,7 @@
 // export.addtocart  = function (product, quantity) {
 //         cart.push({ product, quantity });
 //            console.log(`${quantity} ${product} order from Supplimer (shipping cost is ${shoppingCart}`);
-           
+
 //         };
 
 // //import
@@ -82,6 +82,20 @@
 
 //- 276 - A Brief Introduction to the Command Line
 
+//- 276 - A Brief Introduction to the Command Line
 
+
+
+import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+const state = {
+    cart: [
+
+        { prduct: 'bread', quantity: 5 },
+        { prduct: 'pizza', quantity: 5 }
+    ],
+    user: { logged: true },
+}
+const stateClone = Object.assign({}, state);
+console.log(stateClone);
 
 
