@@ -74,13 +74,13 @@ import shoppingCart from "./shoppingCart";
 // export.addtocart  = function (product, quantity) {
 //         cart.push({ product, quantity });
 //            console.log(`${quantity} ${product} order from Supplimer (shipping cost is ${shoppingCart}`);
-           
+
 //         };
 
 // //import
 // const {addtocart} = require('./shoppingCart.js');
 
-//- 276 - A Brief Introduction to the Command Line
+
 
 
 
