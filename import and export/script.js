@@ -101,3 +101,12 @@ console.log(stateClone);
   if(module.hot){
     module.hot.accept()
   }
+// // import 'core-js/stable';
+// import 'core-js/stable/array/find';
+// import 'core-js/stable/promise';
+import 'regenerator-runtime/runtime';
+
+
+
+
+
