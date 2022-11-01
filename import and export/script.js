@@ -6,7 +6,8 @@
 // // import * as ShoppingCart from'./shoppingCart.js';
 
 // import shoppingCart from "./shoppingCart";
-
+// import cloneDeep from 'lodash-es'
+// import cloneDeep from 'lodash-es';
 // // ShoppingCart.addtocart('bread',5 );
 
 // import add, {cart} from './shoppingCart.js';
@@ -61,20 +62,20 @@
 
 
 
-// ShoppingCart2.addtocart('apple',4)
+ShoppingCart2.addtocart('apple',4)
 
-// ShoppingCart2.addtocart('Mere',45)
-// ShoppingCart2.addtocart('Gaini',2)
-// ShoppingCart2.addtocart('iepuri',3)
-// ShoppingCart2.addtocart('bitcoin',34)
-// console.log(ShoppingCart2)
+ShoppingCart2.addtocart('Mere',45)
+ShoppingCart2.addtocart('Gaini',2)
+ShoppingCart2.addtocart('iepuri',3)
+ShoppingCart2.addtocart('bitcoin',34)
+console.log(ShoppingCart2)
 
 //CommonJS Modules - 275
 // //export
 // export.addtocart  = function (product, quantity) {
 //         cart.push({ product, quantity });
 //            console.log(`${quantity} ${product} order from Supplimer (shipping cost is ${shoppingCart}`);
-
+           
 //         };
 
 // //import
@@ -82,20 +83,21 @@
 
 //- 276 - A Brief Introduction to the Command Line
 
-//- 276 - A Brief Introduction to the Command Line
 
 
-
-import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+// import  cloneDeep  from './node_modules/lodash-es/cloneDeep.js';
+import cloneDeep from 'lodash-es';
 const state = {
-    cart: [
+    cart:[
 
-        { prduct: 'bread', quantity: 5 },
-        { prduct: 'pizza', quantity: 5 }
+{prduct:'bread', quantity:5},
+{prduct:'pizza', quantity:5}
     ],
-    user: { logged: true },
+    user:{logged:true},
 }
-const stateClone = Object.assign({}, state);
+const stateClone = Object.assign({},state);
 console.log(stateClone);
 
-
+  if(module.hot){
+    module.hot.accept()
+  }
