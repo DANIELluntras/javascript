@@ -25,4 +25,3 @@ fs.readFile('./txt/start.txt', 'utf-8', (err, data1) => {
         });
     });
 });
-// console.log('Will read file!');
