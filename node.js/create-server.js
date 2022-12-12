@@ -1,4 +1,5 @@
 const server = http.createServer((req, res) => {
+    console.log(req)
     res.end('hello from the server')
 
 });
