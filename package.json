@@ -21,7 +21,7 @@
   "dependencies": {
     "leaflet": "^1.9.2",
     "lodash": "^4.17.21",
-    "nodemon": "^2.0.19",
+    "nodemon": "^2.0.20",
     "parcel": "^2.7.0"
   },
   "publishConfig": {
