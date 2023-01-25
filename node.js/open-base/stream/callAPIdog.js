@@ -7,7 +7,12 @@ fs.readFile(`${__dirname}/dog.txt`, (err, data) => {
   superagent
     .get(`https://dog.ceo/api/breed/${data}/images/randomFetch!`)
     .end((err, res) => {
-      console.log(res.body.messager);
+      console.log(res.body.message);
+
+      fs.writeFile('./dog-img.txt', res.body.message, (err) => {
+        if(err) return console.log(err.message);
+        console.log('Random dog image saved to file! ');
+      });
     });
 });
 
