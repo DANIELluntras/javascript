@@ -13,6 +13,3 @@ fs.readFile(`${__dirname}/dog.txt`, (err, data) => {
 
 // we need a file , this file is for    call name dog , 
 // ba vezi ca iti va trebui un fiser care sa il citeasca  node.js poti sa te uiti la cursu lu jonas la episodu:41 ca acolo iti arata 
-
-
-
