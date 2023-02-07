@@ -137,3 +137,7 @@ app
 
 
 //  this is server 
+const port = 3000;
+app.listen(port, () => {
+    console.log(`App runing on port 127.0.0.01:${port} ...`)
+})
